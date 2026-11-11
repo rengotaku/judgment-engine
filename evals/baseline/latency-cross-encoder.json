@@ -1,0 +1,225 @@
+{
+  "generated_at": "2026-11-11T12:52:25.718001+00:00",
+  "backend": "cross_encoder:BAAI/bge-reranker-v2-m3",
+  "model_id": "BAAI/bge-reranker-v2-m3",
+  "temperature": 1.0,
+  "repeat": 5,
+  "platform": {
+    "python": "3.12.12",
+    "machine": "x86_64",
+    "processor": "x86_64",
+    "cpu_count": 28
+  },
+  "results": [
+    {
+      "label": "choice/200chars/2options",
+      "state_chars": 200,
+      "questions": 1,
+      "pairs": 2,
+      "p50_ms": 115.42063600791153,
+      "p95_ms": 127.58051280397922,
+      "p99_ms": 129.78501136414707,
+      "mean_ms": 118.24375800206326
+    },
+    {
+      "label": "choice/200chars/4options",
+      "state_chars": 200,
+      "questions": 1,
+      "pairs": 4,
+      "p50_ms": 220.35775700351223,
+      "p95_ms": 328.46655240282416,
+      "p99_ms": 349.49172888416797,
+      "mean_ms": 241.45620560157113
+    },
+    {
+      "label": "choice/200chars/8options",
+      "state_chars": 200,
+      "questions": 1,
+      "pairs": 8,
+      "p50_ms": 462.20606900169514,
+      "p95_ms": 679.4029523938661,
+      "p99_ms": 722.2223592730006,
+      "mean_ms": 501.3170773978345
+    },
+    {
+      "label": "score/200chars/3levels",
+      "state_chars": 200,
+      "questions": 1,
+      "pairs": 3,
+      "p50_ms": 154.70834799634758,
+      "p95_ms": 169.99133219360374,
+      "p99_ms": 172.9710128332954,
+      "mean_ms": 158.02171319664922
+    },
+    {
+      "label": "score/200chars/10levels",
+      "state_chars": 200,
+      "questions": 1,
+      "pairs": 10,
+      "p50_ms": 485.1384290086571,
+      "p95_ms": 714.9589619890321,
+      "p99_ms": 728.9550531876739,
+      "mean_ms": 558.3679597999435
+    },
+    {
+      "label": "noul/200chars",
+      "state_chars": 200,
+      "questions": 1,
+      "pairs": 2,
+      "p50_ms": 105.17562100721989,
+      "p95_ms": 133.84332100104075,
+      "p99_ms": 136.39005779928993,
+      "mean_ms": 114.52372520288918
+    },
+    {
+      "label": "mixed/200chars/8questions",
+      "state_chars": 200,
+      "questions": 8,
+      "pairs": 28,
+      "p50_ms": 1452.1317659964552,
+      "p95_ms": 2212.1589439950185,
+      "p99_ms": 2335.940050392528,
+      "mean_ms": 1628.78997780208
+    },
+    {
+      "label": "choice/1000chars/2options",
+      "state_chars": 1000,
+      "questions": 1,
+      "pairs": 2,
+      "p50_ms": 363.5464069957379,
+      "p95_ms": 433.83687780296896,
+      "p99_ms": 441.4663315616781,
+      "mean_ms": 385.4557112004841
+    },
+    {
+      "label": "choice/1000chars/4options",
+      "state_chars": 1000,
+      "questions": 1,
+      "pairs": 4,
+      "p50_ms": 896.1117169965291,
+      "p95_ms": 1162.4140078085475,
+      "p99_ms": 1194.119285568595,
+      "mean_ms": 932.0630740025081
+    },
+    {
+      "label": "choice/1000chars/8options",
+      "state_chars": 1000,
+      "questions": 1,
+      "pairs": 8,
+      "p50_ms": 1629.7078040079214,
+      "p95_ms": 1922.6592077960959,
+      "p99_ms": 1947.0772527548252,
+      "mean_ms": 1704.3791162024718
+    },
+    {
+      "label": "score/1000chars/3levels",
+      "state_chars": 1000,
+      "questions": 1,
+      "pairs": 3,
+      "p50_ms": 561.991921000299,
+      "p95_ms": 689.7372828039806,
+      "p99_ms": 698.8082525657956,
+      "mean_ms": 592.9096270003356
+    },
+    {
+      "label": "score/1000chars/10levels",
+      "state_chars": 1000,
+      "questions": 1,
+      "pairs": 10,
+      "p50_ms": 1990.8397719991626,
+      "p95_ms": 2253.2492122089025,
+      "p99_ms": 2278.984766450012,
+      "mean_ms": 2054.916724204668
+    },
+    {
+      "label": "noul/1000chars",
+      "state_chars": 1000,
+      "questions": 1,
+      "pairs": 2,
+      "p50_ms": 367.5627060001716,
+      "p95_ms": 384.41419579903595,
+      "p99_ms": 387.54595195990987,
+      "mean_ms": 365.66511380078737
+    },
+    {
+      "label": "mixed/1000chars/8questions",
+      "state_chars": 1000,
+      "questions": 8,
+      "pairs": 28,
+      "p50_ms": 6082.290524995187,
+      "p95_ms": 6284.358807009994,
+      "p99_ms": 6310.571711810189,
+      "mean_ms": 6028.942675801227
+    },
+    {
+      "label": "choice/4000chars/2options",
+      "state_chars": 4000,
+      "questions": 1,
+      "pairs": 2,
+      "p50_ms": 657.3342560004676,
+      "p95_ms": 789.5319263945566,
+      "p99_ms": 791.5599212754751,
+      "mean_ms": 708.3289929956663
+    },
+    {
+      "label": "choice/4000chars/4options",
+      "state_chars": 4000,
+      "questions": 1,
+      "pairs": 4,
+      "p50_ms": 1443.803910005954,
+      "p95_ms": 1587.2929396020481,
+      "p99_ms": 1609.6034735214198,
+      "mean_ms": 1456.9126610032981
+    },
+    {
+      "label": "choice/4000chars/8options",
+      "state_chars": 4000,
+      "questions": 1,
+      "pairs": 8,
+      "p50_ms": 3475.378871007706,
+      "p95_ms": 4052.0452329947148,
+      "p99_ms": 4083.0817833950277,
+      "mean_ms": 3506.5155879972735
+    },
+    {
+      "label": "score/4000chars/3levels",
+      "state_chars": 4000,
+      "questions": 1,
+      "pairs": 3,
+      "p50_ms": 996.1639139946783,
+      "p95_ms": 1219.6724492008798,
+      "p99_ms": 1240.5304826400243,
+      "mean_ms": 1063.7684287998127
+    },
+    {
+      "label": "score/4000chars/10levels",
+      "state_chars": 4000,
+      "questions": 1,
+      "pairs": 10,
+      "p50_ms": 3675.321004993748,
+      "p95_ms": 3782.9933439934393,
+      "p99_ms": 3793.377078391495,
+      "mean_ms": 3649.9841887969524
+    },
+    {
+      "label": "noul/4000chars",
+      "state_chars": 4000,
+      "questions": 1,
+      "pairs": 2,
+      "p50_ms": 634.7363390086684,
+      "p95_ms": 722.875058001955,
+      "p99_ms": 736.3014084036695,
+      "mean_ms": 656.4254255994456
+    },
+    {
+      "label": "mixed/4000chars/8questions",
+      "state_chars": 4000,
+      "questions": 8,
+      "pairs": 28,
+      "p50_ms": 11395.992330013542,
+      "p95_ms": 12948.062803401262,
+      "p99_ms": 12948.390941480757,
+      "mean_ms": 11708.949181807111
+    }
+  ]
+}

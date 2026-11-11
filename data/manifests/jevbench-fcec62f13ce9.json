@@ -1,0 +1,116 @@
+{
+  "repo": "model-collapse/jev-bench",
+  "ref": "fcec62f13ce961115af0d16317f0ff15986a9a25",
+  "files": {
+    "agent_trace_observability/choice.jsonl": {
+      "sha256": "94eb12ddf900f57ff9a21713564ed19be485c1104e8660cdf76affee430f6d10",
+      "bytes": 177700,
+      "rows": 156
+    },
+    "agent_trace_observability/noul.jsonl": {
+      "sha256": "bb17a25b7b51e05de4d5088ba2541163de40cbf00b5a441fedc87ea5c4590d18",
+      "bytes": 50026,
+      "rows": 60
+    },
+    "agent_trace_observability/score.jsonl": {
+      "sha256": "e71400349cb802c16e7f0a75235690543ba2678395984ce9b12864c817d9c99f",
+      "bytes": 184359,
+      "rows": 168
+    },
+    "banking/choice.jsonl": {
+      "sha256": "1f4dc513af5037ac1693e9b996adddb85f20f33b27e3e9c92cdb6813e736d73b",
+      "bytes": 1257905,
+      "rows": 300
+    },
+    "commerce/choice.jsonl": {
+      "sha256": "fdc7f71a68d3ed17303fe507f76a86163533f2c7d15ee14e63a20cb16dd1cc86",
+      "bytes": 50476,
+      "rows": 100
+    },
+    "customer_service/choice.jsonl": {
+      "sha256": "177cacb6535f0a0e4240e916ce0d39db21464b1e131d65bb8572c6bb666145b1",
+      "bytes": 255681,
+      "rows": 137
+    },
+    "customer_service/noul.jsonl": {
+      "sha256": "139e30747ed7fa2b6ef1b76b663f47b30f1d51c99c7837dd4553a038816d913e",
+      "bytes": 145274,
+      "rows": 96
+    },
+    "customer_service/score.jsonl": {
+      "sha256": "c0509d522e714f871bb6f7147845201ffb5b265cfcc86a874475ea95a80de8fc",
+      "bytes": 319660,
+      "rows": 184
+    },
+    "invoice_processing/choice.jsonl": {
+      "sha256": "4e99f72b4822a5554256fc45a23d55523dbd1ce471a265a327bbfa4d0e67e597",
+      "bytes": 103456,
+      "rows": 65
+    },
+    "invoice_processing/noul.jsonl": {
+      "sha256": "cf83a12dcf7a3c18d19ec5dd23e711f9ded95cc594ed1877e3d3029cf547cde5",
+      "bytes": 253380,
+      "rows": 200
+    },
+    "invoice_processing/score.jsonl": {
+      "sha256": "41e20497a8c173bba0a9a0fc0dac69e178cd4743bbd4915d98753cbff9aa70c2",
+      "bytes": 271333,
+      "rows": 184
+    },
+    "invoices/noul.jsonl": {
+      "sha256": "ec8c8acd09f1802aac766357a0b022d9a0b4b75dbc0596c3eabcd6db8be64ef0",
+      "bytes": 41832,
+      "rows": 100
+    },
+    "logic/noul.jsonl": {
+      "sha256": "51ab9a7d663ae762ce2c84f4a34212cb63e27559887292fea5dc5afe8d54678c",
+      "bytes": 44119,
+      "rows": 100
+    },
+    "moderation/score.jsonl": {
+      "sha256": "2c33cccb42efa46e0f4b4f7cef2142fda17bdf359dc93d28abbb0d3ad7fae9ea",
+      "bytes": 41555,
+      "rows": 100
+    },
+    "observability/noul.jsonl": {
+      "sha256": "754fade14a67d30e59f8c069d9cdc109bc45f5a12bdbb0a3d17caa59ad75bd64",
+      "bytes": 36549,
+      "rows": 100
+    },
+    "org/choice.jsonl": {
+      "sha256": "391b66cacb7d9e9566f927c6027a14798dbc87775cc94e57bf1675bb2f116bf7",
+      "bytes": 52221,
+      "rows": 100
+    },
+    "quant/noul.jsonl": {
+      "sha256": "9e3120bae71fa9b5abe7bcadbe5fb4a118e5d5c162b21efe25cc8fab6f64c969",
+      "bytes": 37318,
+      "rows": 100
+    },
+    "reviews/choice.jsonl": {
+      "sha256": "bb55d01676506690f62f99dbeb37cdea0722177f3b4bc3f7bfe32ecb9e86106e",
+      "bytes": 45888,
+      "rows": 100
+    },
+    "security_incidents/choice.jsonl": {
+      "sha256": "099b506aea1da9b399de12728b759d8bad37e1813a36a62080e2b8136a7a2773",
+      "bytes": 158843,
+      "rows": 99
+    },
+    "security_incidents/noul.jsonl": {
+      "sha256": "8c7fed7b36dd11f311b1e70a1b0c322e4194ef66e03419572f1cea06625b3d98",
+      "bytes": 245054,
+      "rows": 193
+    },
+    "security_incidents/score.jsonl": {
+      "sha256": "934e4eb19d1d297edb0f5affc7b0b336b58110382f9e138e1c11b523434643cc",
+      "bytes": 292696,
+      "rows": 192
+    },
+    "support/choice.jsonl": {
+      "sha256": "20de796456dc5bfd4c92deb52fe52dfd0008ed67737bcb3face6e187db858c37",
+      "bytes": 48351,
+      "rows": 100
+    }
+  }
+}

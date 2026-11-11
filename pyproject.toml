@@ -1,0 +1,56 @@
+[project]
+name = "judgment-engine"
+version = "0.1.0"
+description = "Jev 互換の型付き判断 API（Choice / Score / Noul）"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.32",
+    "pydantic>=2.9",
+    "numpy>=2.0",
+    "prometheus-client>=0.21",
+]
+
+[project.optional-dependencies]
+ce = [
+    "torch>=2.5",
+    "transformers>=4.46",
+    "sentence-transformers>=3.3",
+]
+dev = [
+    "pytest>=8.3",
+    "httpx>=0.28",
+    "ruff>=0.8",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/judgment_engine"]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3",
+    "httpx>=0.28",
+]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cpu" }
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
