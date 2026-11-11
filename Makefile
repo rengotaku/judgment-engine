@@ -4,7 +4,7 @@ UVICORN := $(VENV)/bin/uvicorn
 PORT ?= 8088
 HOST ?= 127.0.0.1
 
-.PHONY: help install install-ce run stop status lint test ci eval eval-latency fetch-jevbench clean
+.PHONY: help install install-ce run stop status lint test ci data eval eval-latency fetch-jevbench clean
 
 help:
 	@grep -E '^[a-zA-Z_-]+:.*?## ' $(MAKEFILE_LIST) | awk 'BEGIN{FS=":.*?## "}{printf "%-16s %s\n", $$1, $$2}'
@@ -33,6 +33,9 @@ test: ## テスト
 	$(PY) -m pytest
 
 ci: lint test ## CI 相当
+
+data: ## 蒸留データを生成して検査する（課金なし・seed 固定）
+	$(PY) -m judgment_engine.data.cli --out datasets/generated/v1 --seed 20261111
 
 eval: ## 評価ハーネス（既定: 同梱の 100 件 + JevBench があればそれも）
 	$(PY) -m judgment_engine.eval.cli --authored --out evals/runs/authored-$$(date +%Y%m%d-%H%M%S).json

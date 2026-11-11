@@ -1,0 +1,264 @@
+{
+  "created_at": "2026-11-11T14:30:45.218528+00:00",
+  "git_sha": "a05075d",
+  "builder_version": "template-v1",
+  "seed": 20261111,
+  "teacher": null,
+  "counts": {
+    "rows": 5000,
+    "groups": 111,
+    "by_type": {
+      "choice": 2222,
+      "noul": 1669,
+      "score": 1109
+    },
+    "by_type_main": {
+      "choice": 2200,
+      "noul": 1650,
+      "score": 1100
+    },
+    "by_type_reserve": {
+      "choice": 22,
+      "noul": 19,
+      "score": 9
+    },
+    "by_domain": {
+      "billing": 477,
+      "customer_support": 1708,
+      "education": 80,
+      "healthcare_support": 120,
+      "insurance_claims": 200,
+      "logistics": 270,
+      "security_incidents": 340,
+      "software_operations": 1805
+    },
+    "by_language": {
+      "en": 4266,
+      "ja": 734
+    },
+    "by_split": {
+      "dev": 553,
+      "reserve": 50,
+      "test_adversarial": 380,
+      "test_iid": 550,
+      "test_unseen_criteria": 120,
+      "test_unseen_domain": 670,
+      "test_unseen_question": 120,
+      "train": 2557
+    },
+    "by_subset": {
+      "adversarial": 380,
+      "billing": 336,
+      "customer_support": 1124,
+      "japanese": 721,
+      "reserve": 50,
+      "security_incidents": 238,
+      "software_operations": 1241,
+      "unseen_criteria": 120,
+      "unseen_domain": 670,
+      "unseen_question": 120
+    },
+    "by_source": {
+      "synthetic": 5000
+    },
+    "train_rows": 2557,
+    "eval_rows": 2443
+  },
+  "targets": {
+    "total": 5000,
+    "by_type": {
+      "choice": 2200,
+      "noul": 1650,
+      "score": 1100
+    },
+    "reserve": 50
+  },
+  "shortfalls": {},
+  "families": [
+    {
+      "name": "ops_rate_limit",
+      "type": "choice",
+      "domain": "software_operations",
+      "target": 350,
+      "reserved": null
+    },
+    {
+      "name": "ops_disk",
+      "type": "choice",
+      "domain": "software_operations",
+      "target": 250,
+      "reserved": null
+    },
+    {
+      "name": "deploy_failure",
+      "type": "choice",
+      "domain": "software_operations",
+      "target": 220,
+      "reserved": null
+    },
+    {
+      "name": "billing_duplicate",
+      "type": "choice",
+      "domain": "billing",
+      "target": 220,
+      "reserved": null
+    },
+    {
+      "name": "ticket_routing",
+      "type": "choice",
+      "domain": "customer_support",
+      "target": 320,
+      "reserved": null
+    },
+    {
+      "name": "security_token",
+      "type": "choice",
+      "domain": "security_incidents",
+      "target": 180,
+      "reserved": null
+    },
+    {
+      "name": "ops_config_change",
+      "type": "choice",
+      "domain": "software_operations",
+      "target": 120,
+      "reserved": null
+    },
+    {
+      "name": "logistics_address",
+      "type": "choice",
+      "domain": "logistics",
+      "target": 120,
+      "reserved": "unseen_domain"
+    },
+    {
+      "name": "insurance_coverage",
+      "type": "choice",
+      "domain": "insurance_claims",
+      "target": 100,
+      "reserved": "unseen_domain"
+    },
+    {
+      "name": "education_late",
+      "type": "choice",
+      "domain": "education",
+      "target": 80,
+      "reserved": "unseen_domain"
+    },
+    {
+      "name": "support_criteria_variant",
+      "type": "choice",
+      "domain": "customer_support",
+      "target": 120,
+      "reserved": "unseen_criteria"
+    },
+    {
+      "name": "ops_question_variant",
+      "type": "choice",
+      "domain": "software_operations",
+      "target": 120,
+      "reserved": "unseen_question"
+    },
+    {
+      "name": "refund_request",
+      "type": "noul",
+      "domain": "billing",
+      "target": 250,
+      "reserved": null
+    },
+    {
+      "name": "human_escalation",
+      "type": "noul",
+      "domain": "customer_support",
+      "target": 250,
+      "reserved": null
+    },
+    {
+      "name": "credential_leak",
+      "type": "noul",
+      "domain": "security_incidents",
+      "target": 150,
+      "reserved": null
+    },
+    {
+      "name": "duplicate_report",
+      "type": "noul",
+      "domain": "customer_support",
+      "target": 150,
+      "reserved": null
+    },
+    {
+      "name": "rollback_safe",
+      "type": "noul",
+      "domain": "software_operations",
+      "target": 200,
+      "reserved": null
+    },
+    {
+      "name": "shipment_delayed",
+      "type": "noul",
+      "domain": "logistics",
+      "target": 150,
+      "reserved": "unseen_domain"
+    },
+    {
+      "name": "medical_emergency",
+      "type": "noul",
+      "domain": "healthcare_support",
+      "target": 120,
+      "reserved": "unseen_domain"
+    },
+    {
+      "name": "negation",
+      "type": "noul",
+      "domain": "software_operations",
+      "target": 180,
+      "reserved": "adversarial"
+    },
+    {
+      "name": "info_sufficient",
+      "type": "noul",
+      "domain": "customer_support",
+      "target": 200,
+      "reserved": "adversarial"
+    },
+    {
+      "name": "severity",
+      "type": "score",
+      "domain": "software_operations",
+      "target": 350,
+      "reserved": null
+    },
+    {
+      "name": "urgency",
+      "type": "score",
+      "domain": "customer_support",
+      "target": 300,
+      "reserved": null
+    },
+    {
+      "name": "frustration",
+      "type": "score",
+      "domain": "customer_support",
+      "target": 250,
+      "reserved": null
+    },
+    {
+      "name": "report_quality",
+      "type": "score",
+      "domain": "customer_support",
+      "target": 100,
+      "reserved": null
+    },
+    {
+      "name": "evidence_needed",
+      "type": "score",
+      "domain": "insurance_claims",
+      "target": 100,
+      "reserved": "unseen_domain"
+    }
+  ],
+  "files": {
+    "samples.jsonl": "b3b3920f9b2766458883b2baff31f06e16e97906a419e3b1551c5fbd5eaab126"
+  }
+}
