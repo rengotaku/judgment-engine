@@ -1,0 +1,16 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+dist/
+build/
+*.egg-info/
+
+# 実行時のデータ（フィードバック・ログ）
+var/
+
+# 外部データセット（取得スクリプトで再現する。リポジトリには置かない）
+data/external/
+
+# 評価の生出力
+evals/runs/
