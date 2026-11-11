@@ -14,3 +14,6 @@ data/external/
 
 # 評価の生出力
 evals/runs/
+
+# 生成データの本体（seed 固定で `make data` により再生成する。manifest と checks だけ残す）
+datasets/generated/*/samples.jsonl

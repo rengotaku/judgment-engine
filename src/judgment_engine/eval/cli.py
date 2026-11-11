@@ -30,6 +30,7 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser.add_argument("--temperature", type=float, default=1.0)
     parser.add_argument("--abstain-below", type=float, default=0.60)
     parser.add_argument("--minimum-margin", type=float, default=0.10)
+    parser.add_argument("--split", default="", help="split で絞る（カンマ区切り。例: test_iid,test_unseen_domain）")
     parser.add_argument("--limit", type=int, default=None)
     parser.add_argument("--gold-only", action="store_true")
     parser.add_argument("--tag", default="")
@@ -64,6 +65,9 @@ def main(argv: list[str] | None = None) -> None:
         minimum_margin=args.minimum_margin,
     )
     rows = load_rows(paths)
+    if args.split:
+        wanted = {item.strip() for item in args.split.split(",") if item.strip()}
+        rows = [row for row in rows if row.split in wanted]
     if args.gold_only:
         rows = [row for row in rows if row.reliability == "gold"]
     rows.sort(key=lambda row: (row.source, row.id))

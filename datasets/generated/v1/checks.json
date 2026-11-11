@@ -1,0 +1,47 @@
+{
+  "required_fields": {
+    "ok": true
+  },
+  "unique": {
+    "ok": true
+  },
+  "group_splits": {
+    "ok": true
+  },
+  "gold_isolation": {
+    "ok": true
+  },
+  "near_duplicates": {
+    "ok": true,
+    "pairs_ge_0_95": 94,
+    "cross_split_pairs": 0,
+    "cross_split_examples": [],
+    "examples": [
+      [
+        "syn-000766",
+        "syn-004978",
+        1.0
+      ],
+      [
+        "syn-000475",
+        "syn-004977",
+        1.0
+      ],
+      [
+        "syn-002118",
+        "syn-002187",
+        0.9741
+      ],
+      [
+        "syn-002088",
+        "syn-002185",
+        0.9739
+      ],
+      [
+        "syn-002109",
+        "syn-002149",
+        0.9739
+      ]
+    ]
+  }
+}

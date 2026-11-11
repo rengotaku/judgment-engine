@@ -6,7 +6,7 @@ Jev 互換の判断エンジン。任意の `state` / `instructions` / `criteria
 - 学習: `gpu-broker` + Modal（このリポジトリは学習コードと評価だけを持ち、GPU の管理は gpu-broker に任せる）
 - 目的: 「何でも正しく判定する小型モデル」ではなく、**得意な判断は自律処理し、不得意な判断を検出して教師へ委ねる**エンジン
 
-## 状態（Phase 0）
+## 状態（Phase 0〜1）
 
 | 項目 | 状態 |
 |---|---|
@@ -15,6 +15,8 @@ Jev 互換の判断エンジン。任意の `state` / `instructions` / `criteria
 | 推論 | 学習なしのゼロショット。既定は多言語 Cross-Encoder（`BAAI/bge-reranker-v2-m3`）。`lexical` は CI 用の決定的な代替 |
 | 評価 | 同梱 100 件 + JevBench gold 1,682 件。指標は JSON で保存 |
 | 転送 | `routing` の形だけ固定。teacher / human への実転送は未実装 |
+| データ | テンプレート由来の 5,000 件（choice 2,200 / noul 1,650 / score 1,100 / 予備 50）。provenance と group 分割つき |
+| 教師 | OpenAI 互換の `TeacherAdapter`。**実教師での通し実行は未実施**（課金の承認待ち） |
 | 未達 | P95 100ms。最短構成（200 文字・2 候補）でも 128ms |
 
 ```bash
@@ -32,8 +34,10 @@ curl -sS -X POST http://127.0.0.1:8088/v1/decisions \
 
 - `docs/design-v1.md` — 設計案 v1（アーキテクチャ・モデル・データ・API・ロードマップ）
 - `docs/api.md` — API 契約（リクエスト/レスポンス、routing、エラー）
+- `docs/data-format.md` — データ形式（provenance・group・split・検査）
 - `docs/runbooks/01-local-decisions.md` — ローカル起動
 - `docs/runbooks/02-evaluation.md` — 評価の実行と指標の読み方
+- `docs/runbooks/03-dataset-build.md` — 蒸留データの生成と検査
 - `evals/baseline/README.md` — Phase 0 の未学習ベースライン（指標とレイテンシの実測）
 - `docs/runbook-establishment.md` — 手順を確立する方法（runbook の作り方と検証の型）
 - `docs/runbook-template.md` — 1 手順を書くときのテンプレート

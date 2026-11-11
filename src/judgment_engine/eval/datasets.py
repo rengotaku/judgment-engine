@@ -37,6 +37,7 @@ class Row:
     eval_metric: str
     subset: str
     source: str
+    split: str = ""
 
     def to_question(self) -> dict[str, Any]:
         if self.type == "choice":
@@ -91,12 +92,18 @@ def _parse_row(raw: dict[str, Any], path: Path, line_no: int) -> Row:
     label = raw.get("label")
     if label is None:
         raise ValueError(f"{where}: label がありません")
+    # JevBench は options / levels、このリポジトリの生成データは criteria を使う。
+    # どちらでも同じ行として読めるようにする。
     options = question.get("options")
+    if options is None and row_type == "choice":
+        options = question.get("criteria")
     levels = question.get("levels")
+    if levels is None and row_type == "score":
+        levels = question.get("criteria")
     if row_type == "choice" and not isinstance(options, dict):
-        raise ValueError(f"{where}: choice には question.options が必要")
+        raise ValueError(f"{where}: choice には question.options か question.criteria が必要")
     if row_type == "score" and not isinstance(levels, list):
-        raise ValueError(f"{where}: score には question.levels が必要")
+        raise ValueError(f"{where}: score には question.levels か question.criteria が必要")
     return Row(
         id=str(raw["id"]),
         type=row_type,
@@ -110,6 +117,7 @@ def _parse_row(raw: dict[str, Any], path: Path, line_no: int) -> Row:
         eval_metric=str(raw.get("eval_metric", "exact")),
         subset=str(raw.get("subset") or raw.get("domain") or "unknown"),
         source=path.parent.name if path.parent.name not in {"", "."} else path.stem,
+        split=str(raw.get("split") or ""),
     )
 
 
