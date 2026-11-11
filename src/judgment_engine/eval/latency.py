@@ -109,12 +109,20 @@ def _percentile(sorted_values: list[float], fraction: float) -> float:
     return sorted_values[lower] + (sorted_values[upper] - sorted_values[lower]) * (position - lower)
 
 
+def _add(results: list[Result], result: Result) -> None:
+    results.append(result)
+    print(
+        f"{result.label:34s} pairs={result.pairs:3d} p50={result.p50_ms:7.1f}ms p95={result.p95_ms:7.1f}ms",
+        flush=True,
+    )
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--backend", default="cross_encoder", choices=["lexical", "cross_encoder"])
     parser.add_argument("--model-id", default=DEFAULT_MODEL_ID)
     parser.add_argument("--temperature", type=float, default=1.0)
-    parser.add_argument("--repeat", type=int, default=20)
+    parser.add_argument("--repeat", type=int, default=5)
     parser.add_argument("--out", default="evals/runs/latency.json")
     args = parser.parse_args()
 
@@ -126,28 +134,31 @@ def main() -> None:
         for state_chars in (200, 1000, 4000):
             state = make_state(state_chars)
             for option_count in (2, 4, 8):
-                results.append(
+                _add(
+                    results,
                     measure(
                         engine,
                         f"choice/{state_chars}chars/{option_count}options",
                         state,
                         {"q": make_choice_question(option_count)},
                         args.repeat,
-                    )
+                    ),
                 )
             for level_count in (3, 10):
-                results.append(
+                _add(
+                    results,
                     measure(
                         engine,
                         f"score/{state_chars}chars/{level_count}levels",
                         state,
                         {"q": make_score_question(level_count)},
                         args.repeat,
-                    )
+                    ),
                 )
-            results.append(measure(engine, f"noul/{state_chars}chars", state, {"q": dict(NOUL)}, args.repeat))
+            _add(results, measure(engine, f"noul/{state_chars}chars", state, {"q": dict(NOUL)}, args.repeat))
             # 1 リクエストに複数質問（API の並列評価）
-            results.append(
+            _add(
+                results,
                 measure(
                     engine,
                     f"mixed/{state_chars}chars/8questions",
@@ -163,7 +174,7 @@ def main() -> None:
                         "c3": make_choice_question(2),
                     },
                     args.repeat,
-                )
+                ),
             )
     finally:
         scorer.close()

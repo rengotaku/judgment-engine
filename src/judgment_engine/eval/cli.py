@@ -34,7 +34,7 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser.add_argument("--gold-only", action="store_true")
     parser.add_argument("--tag", default="")
     parser.add_argument("--out", default="evals/runs/eval.json")
-    parser.add_argument("--include-rows", action="store_true", help="行ごとの予測を出力に含める")
+    parser.add_argument("--no-rows", action="store_true", help="行ごとの予測を出力に含めない（既定は含める）")
     return parser.parse_args(argv)
 
 
@@ -88,7 +88,7 @@ def main(argv: list[str] | None = None) -> None:
         scorer_name=scorer.name,
         label=args.tag or ("authored" if args.authored and not args.jevbench else "custom"),
     )
-    if not args.include_rows:
+    if args.no_rows:
         report.pop("rows", None)
     write_report(Path(args.out), report)
 

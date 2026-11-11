@@ -73,6 +73,10 @@ PY
 | 指標が前回と違う | `temperature` / `abstain_below` / モデル | 出力 JSON の `temperature` と `model_id` を前回と突き合わせる |
 | 極端に遅い | CPU の混雑 | `JE_TORCH_THREADS` を下げる。他セッションの負荷を確認する |
 
+## 基準値
+
+Phase 0 の実測値は `evals/baseline/README.md` にある。Phase 2 の比較はこの値に対して行う。
+
 ## 未確認
 
 - 他マシン（GPU あり）での同じ数字。CPU 前提の値しか取っていない

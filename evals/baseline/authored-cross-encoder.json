@@ -1,0 +1,2142 @@
+{
+  "generated_at": "2026-11-11T13:25:19.136033+00:00",
+  "label": "authored",
+  "git_sha": "311cb51",
+  "backend": "cross_encoder:BAAI/bge-reranker-v2-m3",
+  "model_id": "BAAI/bge-reranker-v2-m3",
+  "temperature": 1.0,
+  "thresholds": {
+    "abstain_below": 0.6,
+    "minimum_margin": 0.1
+  },
+  "datasets": {
+    "/home/takuya/Workspace/judgment-engine/main/datasets/authored": ""
+  },
+  "counts": {
+    "rows": 100,
+    "by_type": {
+      "choice": 36,
+      "noul": 35,
+      "score": 29
+    },
+    "by_reliability": {
+      "gold": 100
+    }
+  },
+  "overall": {
+    "n": 100,
+    "accuracy": 0.57,
+    "brier": 0.2134,
+    "ece": 0.1626,
+    "mae": 0.6424,
+    "qwk": 0.1811,
+    "coverage": 0.5,
+    "coverage_accuracy": 0.6,
+    "p50_ms": 237.64,
+    "p95_ms": 342.6,
+    "p99_ms": 491.91,
+    "by_type": {
+      "choice": {
+        "n": 36,
+        "accuracy": 0.5833,
+        "brier": 0.1886,
+        "ece": 0.2056,
+        "mae": 0.0,
+        "qwk": 0.0,
+        "coverage": 0.5278,
+        "coverage_accuracy": 0.6316,
+        "p50_ms": 285.48,
+        "p95_ms": 387.5,
+        "p99_ms": 543.03,
+        "by_type": {}
+      },
+      "noul": {
+        "n": 35,
+        "accuracy": 0.6,
+        "brier": 0.2355,
+        "ece": 0.0757,
+        "mae": 0.0,
+        "qwk": 0.0,
+        "coverage": 0.2857,
+        "coverage_accuracy": 0.6,
+        "p50_ms": 139.91,
+        "p95_ms": 187.68,
+        "p99_ms": 399.9,
+        "by_type": {}
+      },
+      "score": {
+        "n": 29,
+        "accuracy": 0.5172,
+        "brier": 0.2175,
+        "ece": 0.2649,
+        "mae": 0.6424,
+        "qwk": 0.1811,
+        "coverage": 0.7241,
+        "coverage_accuracy": 0.5714,
+        "p50_ms": 258.55,
+        "p95_ms": 310.08,
+        "p99_ms": 330.78,
+        "by_type": {}
+      }
+    }
+  },
+  "by_subset": {
+    "adversarial": {
+      "n": 10,
+      "accuracy": 0.4,
+      "brier": 0.2272,
+      "ece": 0.2894,
+      "mae": 0.0,
+      "qwk": 1.0,
+      "coverage": 0.5,
+      "coverage_accuracy": 0.6,
+      "p50_ms": 324.87,
+      "p95_ms": 559.04,
+      "p99_ms": 603.79,
+      "by_type": {
+        "choice": {
+          "n": 4,
+          "accuracy": 0.0,
+          "brier": 0.3433,
+          "ece": 0.4971,
+          "mae": 0.0,
+          "qwk": 0.0,
+          "coverage": 0.5,
+          "coverage_accuracy": 0.0,
+          "p50_ms": 350.58,
+          "p95_ms": 577.39,
+          "p99_ms": 607.46,
+          "by_type": {}
+        },
+        "noul": {
+          "n": 5,
+          "accuracy": 0.6,
+          "brier": 0.1797,
+          "ece": 0.1811,
+          "mae": 0.0,
+          "qwk": 0.0,
+          "coverage": 0.4,
+          "coverage_accuracy": 1.0,
+          "p50_ms": 158.46,
+          "p95_ms": 426.9,
+          "p99_ms": 477.91,
+          "by_type": {}
+        },
+        "score": {
+          "n": 1,
+          "accuracy": 1.0,
+          "brier": 0.0,
+          "ece": 0.0,
+          "mae": 0.0,
+          "qwk": 1.0,
+          "coverage": 1.0,
+          "coverage_accuracy": 1.0,
+          "p50_ms": 338.78,
+          "p95_ms": 338.78,
+          "p99_ms": 338.78,
+          "by_type": {}
+        }
+      }
+    },
+    "iid": {
+      "n": 30,
+      "accuracy": 0.6,
+      "brier": 0.184,
+      "ece": 0.1508,
+      "mae": 0.4947,
+      "qwk": 0.4419,
+      "coverage": 0.5,
+      "coverage_accuracy": 0.6667,
+      "p50_ms": 237.07,
+      "p95_ms": 325.45,
+      "p99_ms": 340.94,
+      "by_type": {
+        "choice": {
+          "n": 12,
+          "accuracy": 0.75,
+          "brier": 0.095,
+          "ece": 0.1908,
+          "mae": 0.0,
+          "qwk": 0.0,
+          "coverage": 0.4167,
+          "coverage_accuracy": 1.0,
+          "p50_ms": 270.2,
+          "p95_ms": 340.48,
+          "p99_ms": 341.26,
+          "by_type": {}
+        },
+        "noul": {
+          "n": 10,
+          "accuracy": 0.4,
+          "brier": 0.2671,
+          "ece": 0.17,
+          "mae": 0.0,
+          "qwk": 0.0,
+          "coverage": 0.3,
+          "coverage_accuracy": 0.3333,
+          "p50_ms": 117.25,
+          "p95_ms": 185.93,
+          "p99_ms": 216.14,
+          "by_type": {}
+        },
+        "score": {
+          "n": 8,
+          "accuracy": 0.625,
+          "brier": 0.2136,
+          "ece": 0.3728,
+          "mae": 0.4947,
+          "qwk": 0.4419,
+          "coverage": 0.875,
+          "coverage_accuracy": 0.5714,
+          "p50_ms": 260.31,
+          "p95_ms": 303.48,
+          "p99_ms": 303.88,
+          "by_type": {}
+        }
+      }
+    },
+    "japanese": {
+      "n": 15,
+      "accuracy": 0.7333,
+      "brier": 0.1432,
+      "ece": 0.1913,
+      "mae": 0.2467,
+      "qwk": 0.8571,
+      "coverage": 0.4667,
+      "coverage_accuracy": 0.8571,
+      "p50_ms": 246.7,
+      "p95_ms": 291.78,
+      "p99_ms": 295.83,
+      "by_type": {
+        "choice": {
+          "n": 5,
+          "accuracy": 0.6,
+          "brier": 0.195,
+          "ece": 0.2761,
+          "mae": 0.0,
+          "qwk": 0.0,
+          "coverage": 0.6,
+          "coverage_accuracy": 0.6667,
+          "p50_ms": 280.64,
+          "p95_ms": 295.4,
+          "p99_ms": 296.56,
+          "by_type": {}
+        },
+        "noul": {
+          "n": 5,
+          "accuracy": 0.8,
+          "brier": 0.1969,
+          "ece": 0.2127,
+          "mae": 0.0,
+          "qwk": 0.0,
+          "coverage": 0.4,
+          "coverage_accuracy": 1.0,
+          "p50_ms": 142.04,
+          "p95_ms": 166.9,
+          "p99_ms": 171.18,
+          "by_type": {}
+        },
+        "score": {
+          "n": 5,
+          "accuracy": 0.8,
+          "brier": 0.0377,
+          "ece": 0.1364,
+          "mae": 0.2467,
+          "qwk": 0.8571,
+          "coverage": 0.4,
+          "coverage_accuracy": 1.0,
+          "p50_ms": 254.96,
+          "p95_ms": 268.59,
+          "p99_ms": 271.06,
+          "by_type": {}
+        }
+      }
+    },
+    "unseen_criteria": {
+      "n": 15,
+      "accuracy": 0.5333,
+      "brier": 0.2521,
+      "ece": 0.4609,
+      "mae": 1.2487,
+      "qwk": -0.4706,
+      "coverage": 0.5333,
+      "coverage_accuracy": 0.375,
+      "p50_ms": 273.93,
+      "p95_ms": 388.96,
+      "p99_ms": 405.32,
+      "by_type": {
+        "choice": {
+          "n": 5,
+          "accuracy": 0.4,
+          "brier": 0.2657,
+          "ece": 0.6362,
+          "mae": 0.0,
+          "qwk": 0.0,
+          "coverage": 0.6,
+          "coverage_accuracy": 0.3333,
+          "p50_ms": 297.23,
+          "p95_ms": 403.56,
+          "p99_ms": 408.24,
+          "by_type": {}
+        },
+        "noul": {
+          "n": 5,
+          "accuracy": 1.0,
+          "brier": 0.1846,
+          "ece": 0.427,
+          "mae": 0.0,
+          "qwk": 0.0,
+          "coverage": 0.2,
+          "coverage_accuracy": 1.0,
+          "p50_ms": 145.07,
+          "p95_ms": 167.49,
+          "p99_ms": 171.01,
+          "by_type": {}
+        },
+        "score": {
+          "n": 5,
+          "accuracy": 0.2,
+          "brier": 0.3059,
+          "ece": 0.4365,
+          "mae": 1.2487,
+          "qwk": -0.4706,
+          "coverage": 0.8,
+          "coverage_accuracy": 0.25,
+          "p50_ms": 273.93,
+          "p95_ms": 307.93,
+          "p99_ms": 309.75,
+          "by_type": {}
+        }
+      }
+    },
+    "unseen_domain": {
+      "n": 15,
+      "accuracy": 0.6,
+      "brier": 0.2573,
+      "ece": 0.2246,
+      "mae": 0.9401,
+      "qwk": 0.0,
+      "coverage": 0.4667,
+      "coverage_accuracy": 0.5714,
+      "p50_ms": 217.91,
+      "p95_ms": 283.95,
+      "p99_ms": 285.31,
+      "by_type": {
+        "choice": {
+          "n": 5,
+          "accuracy": 0.8,
+          "brier": 0.1529,
+          "ece": 0.4336,
+          "mae": 0.0,
+          "qwk": 0.0,
+          "coverage": 0.6,
+          "coverage_accuracy": 0.6667,
+          "p50_ms": 243.28,
+          "p95_ms": 285.16,
+          "p99_ms": 285.55,
+          "by_type": {}
+        },
+        "noul": {
+          "n": 5,
+          "accuracy": 0.6,
+          "brier": 0.2602,
+          "ece": 0.0324,
+          "mae": 0.0,
+          "qwk": 0.0,
+          "coverage": 0.0,
+          "coverage_accuracy": 0.0,
+          "p50_ms": 147.65,
+          "p95_ms": 153.5,
+          "p99_ms": 154.57,
+          "by_type": {}
+        },
+        "score": {
+          "n": 5,
+          "accuracy": 0.4,
+          "brier": 0.3588,
+          "ece": 0.5225,
+          "mae": 0.9401,
+          "qwk": 0.0,
+          "coverage": 0.8,
+          "coverage_accuracy": 0.5,
+          "p50_ms": 217.91,
+          "p95_ms": 269.14,
+          "p99_ms": 278.63,
+          "by_type": {}
+        }
+      }
+    },
+    "unseen_question": {
+      "n": 15,
+      "accuracy": 0.4667,
+      "brier": 0.2505,
+      "ece": 0.2846,
+      "mae": 0.4987,
+      "qwk": 0.0,
+      "coverage": 0.5333,
+      "coverage_accuracy": 0.5,
+      "p50_ms": 237.87,
+      "p95_ms": 299.54,
+      "p99_ms": 307.83,
+      "by_type": {
+        "choice": {
+          "n": 5,
+          "accuracy": 0.6,
+          "brier": 0.2413,
+          "ece": 0.5095,
+          "mae": 0.0,
+          "qwk": 0.0,
+          "coverage": 0.6,
+          "coverage_accuracy": 0.6667,
+          "p50_ms": 237.88,
+          "p95_ms": 281.54,
+          "p99_ms": 289.93,
+          "by_type": {}
+        },
+        "noul": {
+          "n": 5,
+          "accuracy": 0.4,
+          "brier": 0.2928,
+          "ece": 0.329,
+          "mae": 0.0,
+          "qwk": 0.0,
+          "coverage": 0.4,
+          "coverage_accuracy": 0.0,
+          "p50_ms": 133.78,
+          "p95_ms": 151.13,
+          "p99_ms": 151.72,
+          "by_type": {}
+        },
+        "score": {
+          "n": 5,
+          "accuracy": 0.4,
+          "brier": 0.2174,
+          "ece": 0.3173,
+          "mae": 0.4987,
+          "qwk": 0.0,
+          "coverage": 0.6,
+          "coverage_accuracy": 0.6667,
+          "p50_ms": 289.55,
+          "p95_ms": 306.94,
+          "p99_ms": 309.31,
+          "by_type": {}
+        }
+      }
+    }
+  },
+  "score_level_counts": {
+    "auth-adv-009": 4,
+    "auth-iid-023": 3,
+    "auth-iid-024": 3,
+    "auth-iid-025": 3,
+    "auth-iid-026": 3,
+    "auth-iid-027": 3,
+    "auth-iid-028": 3,
+    "auth-iid-029": 3,
+    "auth-iid-030": 3,
+    "auth-ja-011": 3,
+    "auth-ja-012": 3,
+    "auth-ja-013": 3,
+    "auth-ja-014": 3,
+    "auth-ja-015": 3,
+    "auth-uc-011": 4,
+    "auth-uc-012": 4,
+    "auth-uc-013": 4,
+    "auth-uc-014": 3,
+    "auth-uc-015": 3,
+    "auth-ud-011": 3,
+    "auth-ud-012": 3,
+    "auth-ud-013": 3,
+    "auth-ud-014": 3,
+    "auth-ud-015": 3,
+    "auth-uq-011": 3,
+    "auth-uq-012": 3,
+    "auth-uq-013": 3,
+    "auth-uq-014": 3,
+    "auth-uq-015": 3
+  },
+  "rows": [
+    {
+      "row_id": "auth-adv-001",
+      "type": "noul",
+      "domain": "software_operations",
+      "subset": "adversarial",
+      "label": "no",
+      "predicted": "no",
+      "score_value": null,
+      "probabilities": {
+        "yes": 0.16864585354058806,
+        "no": 0.831354146459412
+      },
+      "confidence": 0.831354146459412,
+      "route": "local",
+      "latency_ms": 158.45900699787308
+    },
+    {
+      "row_id": "auth-adv-002",
+      "type": "noul",
+      "domain": "security_incidents",
+      "subset": "adversarial",
+      "label": "no",
+      "predicted": "yes",
+      "score_value": null,
+      "probabilities": {
+        "yes": 0.583884390335795,
+        "no": 0.416115609664205
+      },
+      "confidence": 0.583884390335795,
+      "route": "teacher",
+      "latency_ms": 139.90893399750348
+    },
+    {
+      "row_id": "auth-adv-003",
+      "type": "choice",
+      "domain": "software_operations",
+      "subset": "adversarial",
+      "label": "retry_5m",
+      "predicted": "retry_30s",
+      "score_value": null,
+      "probabilities": {
+        "retry_30s": 0.5341369007830002,
+        "retry_5m": 0.21347572689488864,
+        "retry_1h": 0.25238737232211106
+      },
+      "confidence": 0.30120535117450037,
+      "route": "teacher",
+      "latency_ms": 336.7957300069975
+    },
+    {
+      "row_id": "auth-adv-004",
+      "type": "choice",
+      "domain": "software_operations",
+      "subset": "adversarial",
+      "label": "clarify",
+      "predicted": "assume_active",
+      "score_value": null,
+      "probabilities": {
+        "clarify": 0.018088233933874327,
+        "assume_active": 0.7920793211891746,
+        "assume_inactive": 0.18983244487695108
+      },
+      "confidence": 0.6881189817837619,
+      "route": "local",
+      "latency_ms": 312.951735992101
+    },
+    {
+      "row_id": "auth-adv-005",
+      "type": "noul",
+      "domain": "customer_support",
+      "subset": "adversarial",
+      "label": "no",
+      "predicted": "no",
+      "score_value": null,
+      "probabilities": {
+        "yes": 0.49213748422021225,
+        "no": 0.5078625157797878
+      },
+      "confidence": 0.5078625157797878,
+      "route": "teacher",
+      "latency_ms": 90.06810699065682
+    },
+    {
+      "row_id": "auth-adv-006",
+      "type": "noul",
+      "domain": "security_incidents",
+      "subset": "adversarial",
+      "label": "yes",
+      "predicted": "yes",
+      "score_value": null,
+      "probabilities": {
+        "yes": 0.8756008060150319,
+        "no": 0.12439919398496813
+      },
+      "confidence": 0.8756008060150319,
+      "route": "local",
+      "latency_ms": 490.66731399216224
+    },
+    {
+      "row_id": "auth-adv-007",
+      "type": "noul",
+      "domain": "billing",
+      "subset": "adversarial",
+      "label": "yes",
+      "predicted": "no",
+      "score_value": null,
+      "probabilities": {
+        "yes": 0.47916986877621076,
+        "no": 0.5208301312237893
+      },
+      "confidence": 0.5208301312237893,
+      "route": "teacher",
+      "latency_ms": 171.83998000109568
+    },
+    {
+      "row_id": "auth-adv-008",
+      "type": "choice",
+      "domain": "billing",
+      "subset": "adversarial",
+      "label": "c1",
+      "predicted": "c3",
+      "score_value": null,
+      "probabilities": {
+        "c1": 0.2202851196965092,
+        "c2": 0.29274932214191723,
+        "c3": 0.4869655581615735
+      },
+      "confidence": 0.23044833724236025,
+      "route": "teacher",
+      "latency_ms": 364.37017600110266
+    },
+    {
+      "row_id": "auth-adv-009",
+      "type": "score",
+      "domain": "customer_support",
+      "subset": "adversarial",
+      "label": "0",
+      "predicted": "0",
+      "score_value": 2.1530081872541846e-05,
+      "probabilities": {
+        "0": 0.9999874128514056,
+        "1": 6.51894350890801e-06,
+        "2": 3.193476892678663e-06,
+        "3": 2.874728192758837e-06
+      },
+      "confidence": 0.9999832171352074,
+      "route": "local",
+      "latency_ms": 338.7766730011208
+    },
+    {
+      "row_id": "auth-adv-010",
+      "type": "choice",
+      "domain": "customer_support",
+      "subset": "adversarial",
+      "label": "b",
+      "predicted": "c",
+      "score_value": null,
+      "probabilities": {
+        "a": 0.07076923197775363,
+        "b": 0.030913353003661645,
+        "c": 0.797569502292336,
+        "d": 0.04564181383082921,
+        "e": 0.019230843689718967,
+        "f": 0.004229984786939651,
+        "g": 0.02640461246675661,
+        "h": 0.005240657952004209
+      },
+      "confidence": 0.7686508597626698,
+      "route": "local",
+      "latency_ms": 614.982699000393
+    },
+    {
+      "row_id": "auth-iid-001",
+      "type": "choice",
+      "domain": "software_operations",
+      "subset": "iid",
+      "label": "retry",
+      "predicted": "retry",
+      "score_value": null,
+      "probabilities": {
+        "retry": 0.8102876790681449,
+        "continue": 0.16024329854039512,
+        "abort": 0.029469022391460004
+      },
+      "confidence": 0.7154315186022173,
+      "route": "local",
+      "latency_ms": 285.30700599367265
+    },
+    {
+      "row_id": "auth-iid-002",
+      "type": "choice",
+      "domain": "software_operations",
+      "subset": "iid",
+      "label": "rotate_logs",
+      "predicted": "rotate_logs",
+      "score_value": null,
+      "probabilities": {
+        "rotate_logs": 0.9152947938015525,
+        "ignore": 0.039636232698837315,
+        "restart_service": 0.045068973499610115
+      },
+      "confidence": 0.8729421907023288,
+      "route": "local",
+      "latency_ms": 341.4537409989862
+    },
+    {
+      "row_id": "auth-iid-003",
+      "type": "choice",
+      "domain": "software_operations",
+      "subset": "iid",
+      "label": "check_tag",
+      "predicted": "check_tag",
+      "score_value": null,
+      "probabilities": {
+        "check_tag": 0.9860628180906611,
+        "rollback": 0.007408837456635637,
+        "scale_up": 0.00652834445270335
+      },
+      "confidence": 0.9790942271359915,
+      "route": "local",
+      "latency_ms": 339.6797780005727
+    },
+    {
+      "row_id": "auth-iid-004",
+      "type": "choice",
+      "domain": "software_operations",
+      "subset": "iid",
+      "label": "renew_certificate",
+      "predicted": "renew_certificate",
+      "score_value": null,
+      "probabilities": {
+        "renew_certificate": 0.5154125441617611,
+        "wait": 0.3349149323981466,
+        "disable_tls": 0.1496725234400923
+      },
+      "confidence": 0.2731188162426416,
+      "route": "teacher",
+      "latency_ms": 307.19926800520625
+    },
+    {
+      "row_id": "auth-iid-005",
+      "type": "choice",
+      "domain": "customer_support",
+      "subset": "iid",
+      "label": "check_spam_and_resend",
+      "predicted": "ignore",
+      "score_value": null,
+      "probabilities": {
+        "check_spam_and_resend": 0.4647250507119933,
+        "delete_account": 0.004793777604969069,
+        "ignore": 0.5304811716830375
+      },
+      "confidence": 0.2957217575245563,
+      "route": "teacher",
+      "latency_ms": 253.42432799516246
+    },
+    {
+      "row_id": "auth-iid-006",
+      "type": "choice",
+      "domain": "software_operations",
+      "subset": "iid",
+      "label": "revert_change",
+      "predicted": "revert_change",
+      "score_value": null,
+      "probabilities": {
+        "revert_change": 0.7647730187816095,
+        "add_cpu": 0.022067669369871916,
+        "ignore": 0.21315931184851858
+      },
+      "confidence": 0.6471595281724143,
+      "route": "local",
+      "latency_ms": 227.67862399632577
+    },
+    {
+      "row_id": "auth-iid-007",
+      "type": "choice",
+      "domain": "billing",
+      "subset": "iid",
+      "label": "refund_duplicate",
+      "predicted": "no_action",
+      "score_value": null,
+      "probabilities": {
+        "refund_duplicate": 0.2423366536118793,
+        "no_action": 0.6952626194510466,
+        "charge_again": 0.06240072693707418
+      },
+      "confidence": 0.5428939291765699,
+      "route": "teacher",
+      "latency_ms": 290.3193029924296
+    },
+    {
+      "row_id": "auth-iid-008",
+      "type": "choice",
+      "domain": "billing",
+      "subset": "iid",
+      "label": "fix_total",
+      "predicted": "fix_total",
+      "score_value": null,
+      "probabilities": {
+        "fix_total": 0.9343384229908264,
+        "change_lines": 0.06501851132097214,
+        "ignore": 0.0006430656882014549
+      },
+      "confidence": 0.9015076344862394,
+      "route": "local",
+      "latency_ms": 308.0598279921105
+    },
+    {
+      "row_id": "auth-iid-009",
+      "type": "choice",
+      "domain": "security_incidents",
+      "subset": "iid",
+      "label": "revoke_token",
+      "predicted": "ignore",
+      "score_value": null,
+      "probabilities": {
+        "revoke_token": 0.4442983371884002,
+        "ignore": 0.5424989405474266,
+        "change_password": 0.013202722264173036
+      },
+      "confidence": 0.31374841082113997,
+      "route": "teacher",
+      "latency_ms": 255.08655300654937
+    },
+    {
+      "row_id": "auth-iid-010",
+      "type": "choice",
+      "domain": "software_operations",
+      "subset": "iid",
+      "label": "investigate_job",
+      "predicted": "investigate_job",
+      "score_value": null,
+      "probabilities": {
+        "investigate_job": 0.5832143359886826,
+        "delete_backups": 0.2872451945599118,
+        "wait": 0.12954046945140557
+      },
+      "confidence": 0.37482150398302383,
+      "route": "teacher",
+      "latency_ms": 206.7005139979301
+    },
+    {
+      "row_id": "auth-iid-011",
+      "type": "choice",
+      "domain": "customer_support",
+      "subset": "iid",
+      "label": "account_access",
+      "predicted": "account_access",
+      "score_value": null,
+      "probabilities": {
+        "account_access": 0.6312883485042912,
+        "billing": 0.14591557113742584,
+        "sales": 0.22279608035828297
+      },
+      "confidence": 0.44693252275643675,
+      "route": "teacher",
+      "latency_ms": 216.97843600122724
+    },
+    {
+      "row_id": "auth-iid-012",
+      "type": "choice",
+      "domain": "software_operations",
+      "subset": "iid",
+      "label": "rollback_deploy",
+      "predicted": "rollback_deploy",
+      "score_value": null,
+      "probabilities": {
+        "rollback_deploy": 0.7113077382065272,
+        "wait": 0.2677312844381407,
+        "add_replicas": 0.02096097735533212
+      },
+      "confidence": 0.5669616073097907,
+      "route": "teacher",
+      "latency_ms": 246.46843200025614
+    },
+    {
+      "row_id": "auth-iid-013",
+      "type": "noul",
+      "domain": "customer_support",
+      "subset": "iid",
+      "label": "yes",
+      "predicted": "yes",
+      "score_value": null,
+      "probabilities": {
+        "yes": 0.6149659233345897,
+        "no": 0.38503407666541034
+      },
+      "confidence": 0.6149659233345897,
+      "route": "local",
+      "latency_ms": 139.60684499761555
+    },
+    {
+      "row_id": "auth-iid-014",
+      "type": "noul",
+      "domain": "customer_support",
+      "subset": "iid",
+      "label": "no",
+      "predicted": "yes",
+      "score_value": null,
+      "probabilities": {
+        "yes": 0.5358899033314383,
+        "no": 0.46411009666856173
+      },
+      "confidence": 0.5358899033314383,
+      "route": "teacher",
+      "latency_ms": 110.50249999971129
+    },
+    {
+      "row_id": "auth-iid-015",
+      "type": "noul",
+      "domain": "customer_support",
+      "subset": "iid",
+      "label": "yes",
+      "predicted": "no",
+      "score_value": null,
+      "probabilities": {
+        "yes": 0.37166719722112784,
+        "no": 0.6283328027788722
+      },
+      "confidence": 0.6283328027788722,
+      "route": "local",
+      "latency_ms": 139.76645999355242
+    },
+    {
+      "row_id": "auth-iid-016",
+      "type": "noul",
+      "domain": "billing",
+      "subset": "iid",
+      "label": "yes",
+      "predicted": "yes",
+      "score_value": null,
+      "probabilities": {
+        "yes": 0.542903871180691,
+        "no": 0.45709612881930906
+      },
+      "confidence": 0.542903871180691,
+      "route": "teacher",
+      "latency_ms": 115.87012499512639
+    },
+    {
+      "row_id": "auth-iid-017",
+      "type": "noul",
+      "domain": "customer_support",
+      "subset": "iid",
+      "label": "yes",
+      "predicted": "no",
+      "score_value": null,
+      "probabilities": {
+        "yes": 0.4965591973827285,
+        "no": 0.5034408026172714
+      },
+      "confidence": 0.5034408026172714,
+      "route": "teacher",
+      "latency_ms": 118.63644000550266
+    },
+    {
+      "row_id": "auth-iid-018",
+      "type": "noul",
+      "domain": "security_incidents",
+      "subset": "iid",
+      "label": "yes",
+      "predicted": "no",
+      "score_value": null,
+      "probabilities": {
+        "yes": 0.48144144436898356,
+        "no": 0.5185585556310164
+      },
+      "confidence": 0.5185585556310164,
+      "route": "teacher",
+      "latency_ms": 136.73699100036174
+    },
+    {
+      "row_id": "auth-iid-019",
+      "type": "noul",
+      "domain": "customer_support",
+      "subset": "iid",
+      "label": "yes",
+      "predicted": "no",
+      "score_value": null,
+      "probabilities": {
+        "yes": 0.3180974674316941,
+        "no": 0.6819025325683059
+      },
+      "confidence": 0.6819025325683059,
+      "route": "local",
+      "latency_ms": 115.32055000134278
+    },
+    {
+      "row_id": "auth-iid-020",
+      "type": "noul",
+      "domain": "customer_support",
+      "subset": "iid",
+      "label": "no",
+      "predicted": "no",
+      "score_value": null,
+      "probabilities": {
+        "yes": 0.4220718886750715,
+        "no": 0.5779281113249285
+      },
+      "confidence": 0.5779281113249285,
+      "route": "teacher",
+      "latency_ms": 107.40849499416072
+    },
+    {
+      "row_id": "auth-iid-021",
+      "type": "noul",
+      "domain": "customer_support",
+      "subset": "iid",
+      "label": "no",
+      "predicted": "no",
+      "score_value": null,
+      "probabilities": {
+        "yes": 0.4322658252567917,
+        "no": 0.5677341747432083
+      },
+      "confidence": 0.5677341747432083,
+      "route": "teacher",
+      "latency_ms": 103.91689499374479
+    },
+    {
+      "row_id": "auth-iid-022",
+      "type": "noul",
+      "domain": "software_operations",
+      "subset": "iid",
+      "label": "yes",
+      "predicted": "no",
+      "score_value": null,
+      "probabilities": {
+        "yes": 0.47134015795691564,
+        "no": 0.5286598420430844
+      },
+      "confidence": 0.5286598420430844,
+      "route": "teacher",
+      "latency_ms": 223.69343899481464
+    },
+    {
+      "row_id": "auth-iid-023",
+      "type": "score",
+      "domain": "software_operations",
+      "subset": "iid",
+      "label": "0",
+      "predicted": "2",
+      "score_value": 1.7521275459942203,
+      "probabilities": {
+        "0": 0.023869942903773186,
+        "1": 0.20013256819823338,
+        "2": 0.7759974888979935
+      },
+      "confidence": 0.6639962333469902,
+      "route": "local",
+      "latency_ms": 303.97933498898055
+    },
+    {
+      "row_id": "auth-iid-024",
+      "type": "score",
+      "domain": "software_operations",
+      "subset": "iid",
+      "label": "1",
+      "predicted": "2",
+      "score_value": 1.802541587960254,
+      "probabilities": {
+        "0": 0.012427793838122083,
+        "1": 0.17260282436350194,
+        "2": 0.814969381798376
+      },
+      "confidence": 0.7224540726975639,
+      "route": "local",
+      "latency_ms": 248.72245799633674
+    },
+    {
+      "row_id": "auth-iid-025",
+      "type": "score",
+      "domain": "software_operations",
+      "subset": "iid",
+      "label": "2",
+      "predicted": "2",
+      "score_value": 1.9952248530848882,
+      "probabilities": {
+        "0": 0.0018350484185711237,
+        "1": 0.0011050500779697992,
+        "2": 0.9970599015034591
+      },
+      "confidence": 0.9955898522551887,
+      "route": "local",
+      "latency_ms": 302.5445170060266
+    },
+    {
+      "row_id": "auth-iid-026",
+      "type": "score",
+      "domain": "customer_support",
+      "subset": "iid",
+      "label": "0",
+      "predicted": "0",
+      "score_value": 0.02180421396495962,
+      "probabilities": {
+        "0": 0.9800288085164098,
+        "1": 0.01813816900222053,
+        "2": 0.0018330224813695446
+      },
+      "confidence": 0.9700432127746146,
+      "route": "local",
+      "latency_ms": 218.71405499405228
+    },
+    {
+      "row_id": "auth-iid-027",
+      "type": "score",
+      "domain": "customer_support",
+      "subset": "iid",
+      "label": "1",
+      "predicted": "1",
+      "score_value": 0.7626293066943787,
+      "probabilities": {
+        "0": 0.27464838807036085,
+        "1": 0.6880739171648999,
+        "2": 0.037277694764739404
+      },
+      "confidence": 0.5321108757473497,
+      "route": "teacher",
+      "latency_ms": 265.3965839999728
+    },
+    {
+      "row_id": "auth-iid-028",
+      "type": "score",
+      "domain": "customer_support",
+      "subset": "iid",
+      "label": "2",
+      "predicted": "2",
+      "score_value": 1.8612363989221632,
+      "probabilities": {
+        "0": 0.020541281576665276,
+        "1": 0.09768103792450622,
+        "2": 0.8817776804988285
+      },
+      "confidence": 0.8226665207482426,
+      "route": "local",
+      "latency_ms": 258.55167899862863
+    },
+    {
+      "row_id": "auth-iid-029",
+      "type": "score",
+      "domain": "customer_support",
+      "subset": "iid",
+      "label": "1",
+      "predicted": "1",
+      "score_value": 0.9979235853137035,
+      "probabilities": {
+        "0": 0.0038439524305555577,
+        "1": 0.9943885098251853,
+        "2": 0.001767537744259111
+      },
+      "confidence": 0.9915827647377778,
+      "route": "local",
+      "latency_ms": 262.07685899862554
+    },
+    {
+      "row_id": "auth-iid-030",
+      "type": "score",
+      "domain": "customer_support",
+      "subset": "iid",
+      "label": "0",
+      "predicted": "1",
+      "score_value": 0.9977715887818557,
+      "probabilities": {
+        "0": 0.003302232878590999,
+        "1": 0.9956239454609624,
+        "2": 0.001073821660446604
+      },
+      "confidence": 0.9934359181914435,
+      "route": "local",
+      "latency_ms": 205.16781399783213
+    },
+    {
+      "row_id": "auth-ja-001",
+      "type": "choice",
+      "domain": "software_operations",
+      "subset": "japanese",
+      "label": "retry",
+      "predicted": "retry",
+      "score_value": null,
+      "probabilities": {
+        "retry": 0.998220222538319,
+        "continue": 0.001605370805530587,
+        "abort": 0.00017440665615042883
+      },
+      "confidence": 0.9973303338074785,
+      "route": "local",
+      "latency_ms": 289.6016309969127
+    },
+    {
+      "row_id": "auth-ja-002",
+      "type": "choice",
+      "domain": "customer_support",
+      "subset": "japanese",
+      "label": "check_spam",
+      "predicted": "check_spam",
+      "score_value": null,
+      "probabilities": {
+        "check_spam": 0.8264748964198878,
+        "delete": 0.0036918011496509025,
+        "wait": 0.16983330243046127
+      },
+      "confidence": 0.7397123446298317,
+      "route": "local",
+      "latency_ms": 280.6403099966701
+    },
+    {
+      "row_id": "auth-ja-003",
+      "type": "choice",
+      "domain": "billing",
+      "subset": "japanese",
+      "label": "refund",
+      "predicted": "explain",
+      "score_value": null,
+      "probabilities": {
+        "refund": 0.257357965993342,
+        "explain": 0.5837734890536355,
+        "charge": 0.1588685449530226
+      },
+      "confidence": 0.3756602335804532,
+      "route": "teacher",
+      "latency_ms": 237.8570500004571
+    },
+    {
+      "row_id": "auth-ja-004",
+      "type": "choice",
+      "domain": "software_operations",
+      "subset": "japanese",
+      "label": "rotate",
+      "predicted": "rotate",
+      "score_value": null,
+      "probabilities": {
+        "rotate": 0.5906079730008735,
+        "ignore": 0.22545889677581687,
+        "restart": 0.18393313022330957
+      },
+      "confidence": 0.3859119595013103,
+      "route": "teacher",
+      "latency_ms": 296.84799200913403
+    },
+    {
+      "row_id": "auth-ja-005",
+      "type": "choice",
+      "domain": "security_incidents",
+      "subset": "japanese",
+      "label": "revoke",
+      "predicted": "delete",
+      "score_value": null,
+      "probabilities": {
+        "revoke": 0.07784533129898806,
+        "delete": 0.919532518945575,
+        "password": 0.0026221497554370396
+      },
+      "confidence": 0.8792987784183625,
+      "route": "local",
+      "latency_ms": 255.3724460012745
+    },
+    {
+      "row_id": "auth-ja-006",
+      "type": "noul",
+      "domain": "customer_support",
+      "subset": "japanese",
+      "label": "yes",
+      "predicted": "yes",
+      "score_value": null,
+      "probabilities": {
+        "yes": 0.5912236492340498,
+        "no": 0.4087763507659502
+      },
+      "confidence": 0.5912236492340498,
+      "route": "teacher",
+      "latency_ms": 126.72861600003671
+    },
+    {
+      "row_id": "auth-ja-007",
+      "type": "noul",
+      "domain": "customer_support",
+      "subset": "japanese",
+      "label": "no",
+      "predicted": "no",
+      "score_value": null,
+      "probabilities": {
+        "yes": 0.35937237856596216,
+        "no": 0.6406276214340378
+      },
+      "confidence": 0.6406276214340378,
+      "route": "local",
+      "latency_ms": 112.78637900250033
+    },
+    {
+      "row_id": "auth-ja-008",
+      "type": "noul",
+      "domain": "billing",
+      "subset": "japanese",
+      "label": "yes",
+      "predicted": "yes",
+      "score_value": null,
+      "probabilities": {
+        "yes": 0.5181135506042721,
+        "no": 0.4818864493957279
+      },
+      "confidence": 0.5181135506042721,
+      "route": "teacher",
+      "latency_ms": 142.03728099528234
+    },
+    {
+      "row_id": "auth-ja-009",
+      "type": "noul",
+      "domain": "software_operations",
+      "subset": "japanese",
+      "label": "no",
+      "predicted": "no",
+      "score_value": null,
+      "probabilities": {
+        "yes": 0.37498535732425825,
+        "no": 0.6250146426757417
+      },
+      "confidence": 0.6250146426757417,
+      "route": "local",
+      "latency_ms": 172.2459250013344
+    },
+    {
+      "row_id": "auth-ja-010",
+      "type": "noul",
+      "domain": "security_incidents",
+      "subset": "japanese",
+      "label": "yes",
+      "predicted": "no",
+      "score_value": null,
+      "probabilities": {
+        "yes": 0.43825545255729526,
+        "no": 0.5617445474427047
+      },
+      "confidence": 0.5617445474427047,
+      "route": "teacher",
+      "latency_ms": 145.51856099569704
+    },
+    {
+      "row_id": "auth-ja-011",
+      "type": "score",
+      "domain": "software_operations",
+      "subset": "japanese",
+      "label": "0",
+      "predicted": "0",
+      "score_value": 0.3822030347089119,
+      "probabilities": {
+        "0": 0.7054938695464434,
+        "1": 0.20680922619820122,
+        "2": 0.08769690425535534
+      },
+      "confidence": 0.5582408043196652,
+      "route": "teacher",
+      "latency_ms": 254.96241700602695
+    },
+    {
+      "row_id": "auth-ja-012",
+      "type": "score",
+      "domain": "software_operations",
+      "subset": "japanese",
+      "label": "1",
+      "predicted": "1",
+      "score_value": 0.855157367819751,
+      "probabilities": {
+        "0": 0.23946079888664543,
+        "1": 0.6659210344069583,
+        "2": 0.09461816670639642
+      },
+      "confidence": 0.4988815516104374,
+      "route": "teacher",
+      "latency_ms": 256.2610130116809
+    },
+    {
+      "row_id": "auth-ja-013",
+      "type": "score",
+      "domain": "software_operations",
+      "subset": "japanese",
+      "label": "2",
+      "predicted": "1",
+      "score_value": 1.443883460159726,
+      "probabilities": {
+        "0": 0.15980800582528637,
+        "1": 0.23650052818970144,
+        "2": 0.6036914659850122
+      },
+      "confidence": 0.40553719897751833,
+      "route": "teacher",
+      "latency_ms": 271.67568099685013
+    },
+    {
+      "row_id": "auth-ja-014",
+      "type": "score",
+      "domain": "customer_support",
+      "subset": "japanese",
+      "label": "0",
+      "predicted": "0",
+      "score_value": 0.011010318171172423,
+      "probabilities": {
+        "0": 0.9891648385599561,
+        "1": 0.010660004708915148,
+        "2": 0.00017515673112863806
+      },
+      "confidence": 0.9837472578399341,
+      "route": "local",
+      "latency_ms": 236.27025799942203
+    },
+    {
+      "row_id": "auth-ja-015",
+      "type": "score",
+      "domain": "customer_support",
+      "subset": "japanese",
+      "label": "2",
+      "predicted": "2",
+      "score_value": 1.8607139017958143,
+      "probabilities": {
+        "0": 0.053657687269858555,
+        "1": 0.03197072366446851,
+        "2": 0.914371589065673
+      },
+      "confidence": 0.8715573835985094,
+      "route": "local",
+      "latency_ms": 246.69546099903528
+    },
+    {
+      "row_id": "auth-uc-001",
+      "type": "choice",
+      "domain": "software_operations",
+      "subset": "unseen_criteria",
+      "label": "backoff_retry",
+      "predicted": "backoff_retry",
+      "score_value": null,
+      "probabilities": {
+        "backoff_retry": 0.35339425806575825,
+        "fallback_cache": 0.035161856726835965,
+        "alert": 0.041508861412455224,
+        "drop": 0.3430770582527137,
+        "escalate_customer": 0.22685796554223697
+      },
+      "confidence": 0.1917428225821978,
+      "route": "teacher",
+      "latency_ms": 380.2034590044059
+    },
+    {
+      "row_id": "auth-uc-002",
+      "type": "choice",
+      "domain": "billing",
+      "subset": "unseen_criteria",
+      "label": "refund",
+      "predicted": "explain",
+      "score_value": null,
+      "probabilities": {
+        "refund": 0.02289442986643452,
+        "explain": 0.976288428845723,
+        "extend": 0.0006436897201774522,
+        "ignore": 0.00017345156766493153
+      },
+      "confidence": 0.9683845717942973,
+      "route": "local",
+      "latency_ms": 288.356789998943
+    },
+    {
+      "row_id": "auth-uc-003",
+      "type": "choice",
+      "domain": "customer_support",
+      "subset": "unseen_criteria",
+      "label": "guide_export",
+      "predicted": "guide_export",
+      "score_value": null,
+      "probabilities": {
+        "guide_export": 0.9764374848245699,
+        "delete_now": 0.021396217119804994,
+        "upsell": 0.00013085850643158978,
+        "no_reply": 0.002035439549193493
+      },
+      "confidence": 0.9685833130994266,
+      "route": "local",
+      "latency_ms": 297.2347360046115
+    },
+    {
+      "row_id": "auth-uc-004",
+      "type": "choice",
+      "domain": "security_incidents",
+      "subset": "unseen_criteria",
+      "label": "report_phishing",
+      "predicted": "reply",
+      "score_value": null,
+      "probabilities": {
+        "report_phishing": 0.04933157855836598,
+        "reply": 0.9494102453166511,
+        "forward": 0.0005321373868946702,
+        "delete": 0.0005263758544339741,
+        "click": 0.00019966288365424014
+      },
+      "confidence": 0.9367628066458139,
+      "route": "local",
+      "latency_ms": 409.4049319974147
+    },
+    {
+      "row_id": "auth-uc-005",
+      "type": "choice",
+      "domain": "software_operations",
+      "subset": "unseen_criteria",
+      "label": "schedule_window",
+      "predicted": "run_now",
+      "score_value": null,
+      "probabilities": {
+        "schedule_window": 0.011428372044048686,
+        "run_now": 0.6242069347269942,
+        "cancel": 0.3493373521728642,
+        "scale_db": 0.015027341056092937
+      },
+      "confidence": 0.49894257963599226,
+      "route": "teacher",
+      "latency_ms": 291.4801989973057
+    },
+    {
+      "row_id": "auth-uc-006",
+      "type": "noul",
+      "domain": "customer_support",
+      "subset": "unseen_criteria",
+      "label": "yes",
+      "predicted": "yes",
+      "score_value": null,
+      "probabilities": {
+        "yes": 0.542525895567962,
+        "no": 0.45747410443203795
+      },
+      "confidence": 0.542525895567962,
+      "route": "teacher",
+      "latency_ms": 171.88866199285258
+    },
+    {
+      "row_id": "auth-uc-007",
+      "type": "noul",
+      "domain": "customer_support",
+      "subset": "unseen_criteria",
+      "label": "yes",
+      "predicted": "yes",
+      "score_value": null,
+      "probabilities": {
+        "yes": 0.6404046293297525,
+        "no": 0.3595953706702475
+      },
+      "confidence": 0.6404046293297525,
+      "route": "local",
+      "latency_ms": 145.07041999604553
+    },
+    {
+      "row_id": "auth-uc-008",
+      "type": "noul",
+      "domain": "software_operations",
+      "subset": "unseen_criteria",
+      "label": "no",
+      "predicted": "no",
+      "score_value": null,
+      "probabilities": {
+        "yes": 0.41786825833029234,
+        "no": 0.5821317416697076
+      },
+      "confidence": 0.5821317416697076,
+      "route": "teacher",
+      "latency_ms": 149.9127330025658
+    },
+    {
+      "row_id": "auth-uc-009",
+      "type": "noul",
+      "domain": "security_incidents",
+      "subset": "unseen_criteria",
+      "label": "yes",
+      "predicted": "yes",
+      "score_value": null,
+      "probabilities": {
+        "yes": 0.5020667196826315,
+        "no": 0.4979332803173685
+      },
+      "confidence": 0.5020667196826315,
+      "route": "teacher",
+      "latency_ms": 142.62616100313608
+    },
+    {
+      "row_id": "auth-uc-010",
+      "type": "noul",
+      "domain": "customer_support",
+      "subset": "unseen_criteria",
+      "label": "no",
+      "predicted": "no",
+      "score_value": null,
+      "probabilities": {
+        "yes": 0.4020683379993585,
+        "no": 0.5979316620006415
+      },
+      "confidence": 0.5979316620006415,
+      "route": "teacher",
+      "latency_ms": 107.14762099087238
+    },
+    {
+      "row_id": "auth-uc-011",
+      "type": "score",
+      "domain": "software_operations",
+      "subset": "unseen_criteria",
+      "label": "0",
+      "predicted": "2",
+      "score_value": 1.8535529280373058,
+      "probabilities": {
+        "0": 0.04375234885787787,
+        "1": 0.10018604235418581,
+        "2": 0.8148179406806892,
+        "3": 0.041243668107247146
+      },
+      "confidence": 0.7530905875742523,
+      "route": "local",
+      "latency_ms": 298.8502570078708
+    },
+    {
+      "row_id": "auth-uc-012",
+      "type": "score",
+      "domain": "software_operations",
+      "subset": "unseen_criteria",
+      "label": "2",
+      "predicted": "2",
+      "score_value": 1.8131276637699867,
+      "probabilities": {
+        "0": 0.09310224052933837,
+        "1": 0.09438440392801775,
+        "2": 0.7187968067859627,
+        "3": 0.09371654875668117
+      },
+      "confidence": 0.6250624090479503,
+      "route": "local",
+      "latency_ms": 310.2007039997261
+    },
+    {
+      "row_id": "auth-uc-013",
+      "type": "score",
+      "domain": "software_operations",
+      "subset": "unseen_criteria",
+      "label": "3",
+      "predicted": "0",
+      "score_value": 0.498366679706464,
+      "probabilities": {
+        "0": 0.7502761237418414,
+        "1": 0.0025988757448083166,
+        "2": 0.24560719757839541,
+        "3": 0.00151780293495494
+      },
+      "confidence": 0.6670348316557885,
+      "route": "local",
+      "latency_ms": 273.92554499965627
+    },
+    {
+      "row_id": "auth-uc-014",
+      "type": "score",
+      "domain": "customer_support",
+      "subset": "unseen_criteria",
+      "label": "0",
+      "predicted": "1",
+      "score_value": 1.0160543740576529,
+      "probabilities": {
+        "0": 0.038492367380803715,
+        "1": 0.9069608911807395,
+        "2": 0.054546741438456656
+      },
+      "confidence": 0.8604413367711091,
+      "route": "local",
+      "latency_ms": 189.4042880012421
+    },
+    {
+      "row_id": "auth-uc-015",
+      "type": "score",
+      "domain": "customer_support",
+      "subset": "unseen_criteria",
+      "label": "2",
+      "predicted": "1",
+      "score_value": 1.3146328320345928,
+      "probabilities": {
+        "0": 0.20320215180016404,
+        "1": 0.2789628643650791,
+        "2": 0.5178349838347569
+      },
+      "confidence": 0.27675247575213535,
+      "route": "teacher",
+      "latency_ms": 212.18711700930726
+    },
+    {
+      "row_id": "auth-ud-001",
+      "type": "choice",
+      "domain": "insurance_claims",
+      "subset": "unseen_domain",
+      "label": "deny_claim",
+      "predicted": "deny_claim",
+      "score_value": null,
+      "probabilities": {
+        "deny_claim": 0.937558466419053,
+        "pay_claim": 0.05256869382787728,
+        "ask_more": 0.009872839753069778
+      },
+      "confidence": 0.9063376996285796,
+      "route": "local",
+      "latency_ms": 285.64571699826047
+    },
+    {
+      "row_id": "auth-ud-002",
+      "type": "choice",
+      "domain": "logistics",
+      "subset": "unseen_domain",
+      "label": "check_proof",
+      "predicted": "check_proof",
+      "score_value": null,
+      "probabilities": {
+        "check_proof": 0.651147662655853,
+        "refund_now": 0.02039986416595939,
+        "reship": 0.32845247317818765
+      },
+      "confidence": 0.4767214939837795,
+      "route": "teacher",
+      "latency_ms": 237.4157800077228
+    },
+    {
+      "row_id": "auth-ud-003",
+      "type": "choice",
+      "domain": "education",
+      "subset": "unseen_domain",
+      "label": "review_evidence",
+      "predicted": "review_evidence",
+      "score_value": null,
+      "probabilities": {
+        "review_evidence": 0.9625948254164249,
+        "auto_fail": 0.01076391765249068,
+        "ignore": 0.026641256931084385
+      },
+      "confidence": 0.9438922381246374,
+      "route": "local",
+      "latency_ms": 283.22315200057346
+    },
+    {
+      "row_id": "auth-ud-004",
+      "type": "choice",
+      "domain": "hr",
+      "subset": "unseen_domain",
+      "label": "explain_policy",
+      "predicted": "delay",
+      "score_value": null,
+      "probabilities": {
+        "explain_policy": 0.06020548271197326,
+        "deny": 0.0657575492980289,
+        "delay": 0.8740369679899979
+      },
+      "confidence": 0.8110554519849966,
+      "route": "local",
+      "latency_ms": 223.76313900167588
+    },
+    {
+      "row_id": "auth-ud-005",
+      "type": "choice",
+      "domain": "legal",
+      "subset": "unseen_domain",
+      "label": "legal_review",
+      "predicted": "legal_review",
+      "score_value": null,
+      "probabilities": {
+        "legal_review": 0.5440232403965832,
+        "agent_reply": 0.44114784758691233,
+        "ignore": 0.014828912016504492
+      },
+      "confidence": 0.31603486059487484,
+      "route": "teacher",
+      "latency_ms": 243.28366899862885
+    },
+    {
+      "row_id": "auth-ud-006",
+      "type": "noul",
+      "domain": "healthcare_support",
+      "subset": "unseen_domain",
+      "label": "yes",
+      "predicted": "yes",
+      "score_value": null,
+      "probabilities": {
+        "yes": 0.5603166782430603,
+        "no": 0.4396833217569397
+      },
+      "confidence": 0.5603166782430603,
+      "route": "teacher",
+      "latency_ms": 147.64619800553191
+    },
+    {
+      "row_id": "auth-ud-007",
+      "type": "noul",
+      "domain": "insurance_claims",
+      "subset": "unseen_domain",
+      "label": "yes",
+      "predicted": "no",
+      "score_value": null,
+      "probabilities": {
+        "yes": 0.4186350520911122,
+        "no": 0.5813649479088878
+      },
+      "confidence": 0.5813649479088878,
+      "route": "teacher",
+      "latency_ms": 143.043748990749
+    },
+    {
+      "row_id": "auth-ud-008",
+      "type": "noul",
+      "domain": "logistics",
+      "subset": "unseen_domain",
+      "label": "yes",
+      "predicted": "no",
+      "score_value": null,
+      "probabilities": {
+        "yes": 0.40165038862550373,
+        "no": 0.5983496113744963
+      },
+      "confidence": 0.5983496113744963,
+      "route": "teacher",
+      "latency_ms": 154.83804399264045
+    },
+    {
+      "row_id": "auth-ud-009",
+      "type": "noul",
+      "domain": "education",
+      "subset": "unseen_domain",
+      "label": "no",
+      "predicted": "no",
+      "score_value": null,
+      "probabilities": {
+        "yes": 0.499925851822443,
+        "no": 0.500074148177557
+      },
+      "confidence": 0.500074148177557,
+      "route": "teacher",
+      "latency_ms": 148.15990699571557
+    },
+    {
+      "row_id": "auth-ud-010",
+      "type": "noul",
+      "domain": "hr",
+      "subset": "unseen_domain",
+      "label": "no",
+      "predicted": "no",
+      "score_value": null,
+      "probabilities": {
+        "yes": 0.4021735784766154,
+        "no": 0.5978264215233846
+      },
+      "confidence": 0.5978264215233846,
+      "route": "teacher",
+      "latency_ms": 134.44377899577376
+    },
+    {
+      "row_id": "auth-ud-011",
+      "type": "score",
+      "domain": "healthcare_support",
+      "subset": "unseen_domain",
+      "label": "0",
+      "predicted": "2",
+      "score_value": 1.9946551829982266,
+      "probabilities": {
+        "0": 0.0014154083404075669,
+        "1": 0.002514000320958481,
+        "2": 0.9960705913386341
+      },
+      "confidence": 0.9941058870079511,
+      "route": "local",
+      "latency_ms": 221.65214701090008
+    },
+    {
+      "row_id": "auth-ud-012",
+      "type": "score",
+      "domain": "healthcare_support",
+      "subset": "unseen_domain",
+      "label": "1",
+      "predicted": "2",
+      "score_value": 1.989860955134289,
+      "probabilities": {
+        "0": 0.0006253321261865339,
+        "1": 0.00888838061333817,
+        "2": 0.9904862872604754
+      },
+      "confidence": 0.9857294308907131,
+      "route": "local",
+      "latency_ms": 209.05376599694137
+    },
+    {
+      "row_id": "auth-ud-013",
+      "type": "score",
+      "domain": "healthcare_support",
+      "subset": "unseen_domain",
+      "label": "2",
+      "predicted": "2",
+      "score_value": 1.9971390209806468,
+      "probabilities": {
+        "0": 0.00012599530108682559,
+        "1": 0.002608988417179585,
+        "2": 0.9972650162817336
+      },
+      "confidence": 0.9958975244226004,
+      "route": "local",
+      "latency_ms": 281.0080550116254
+    },
+    {
+      "row_id": "auth-ud-014",
+      "type": "score",
+      "domain": "insurance_claims",
+      "subset": "unseen_domain",
+      "label": "0",
+      "predicted": "2",
+      "score_value": 1.6006535627763332,
+      "probabilities": {
+        "0": 0.053202910886135706,
+        "1": 0.29294061545139555,
+        "2": 0.6538564736624688
+      },
+      "confidence": 0.4807847104937032,
+      "route": "teacher",
+      "latency_ms": 215.0897779938532
+    },
+    {
+      "row_id": "auth-ud-015",
+      "type": "score",
+      "domain": "legal",
+      "subset": "unseen_domain",
+      "label": "2",
+      "predicted": "2",
+      "score_value": 1.887416191384595,
+      "probabilities": {
+        "0": 0.008579838023989688,
+        "1": 0.09542413256742527,
+        "2": 0.8959960294085849
+      },
+      "confidence": 0.8439940441128774,
+      "route": "local",
+      "latency_ms": 217.9121049994137
+    },
+    {
+      "row_id": "auth-uq-001",
+      "type": "choice",
+      "domain": "software_operations",
+      "subset": "unseen_question",
+      "label": "wait_retry",
+      "predicted": "wait_retry",
+      "score_value": null,
+      "probabilities": {
+        "wait_retry": 0.9971486453832489,
+        "retry_now": 0.001545419445589215,
+        "fail": 0.001305935171161816
+      },
+      "confidence": 0.9957229680748731,
+      "route": "local",
+      "latency_ms": 239.62772999948356
+    },
+    {
+      "row_id": "auth-uq-002",
+      "type": "choice",
+      "domain": "software_operations",
+      "subset": "unseen_question",
+      "label": "rotate_logs",
+      "predicted": "wait",
+      "score_value": null,
+      "probabilities": {
+        "rotate_logs": 0.14081721362310345,
+        "wait": 0.6293091623286248,
+        "restart": 0.2298736240482718
+      },
+      "confidence": 0.44396374349293716,
+      "route": "teacher",
+      "latency_ms": 292.02236399578396
+    },
+    {
+      "row_id": "auth-uq-003",
+      "type": "choice",
+      "domain": "billing",
+      "subset": "unseen_question",
+      "label": "refund_duplicate",
+      "predicted": "refund_duplicate",
+      "score_value": null,
+      "probabilities": {
+        "refund_duplicate": 0.7963885673153303,
+        "no_action": 0.07399917248524268,
+        "charge_more": 0.12961226019942712
+      },
+      "confidence": 0.6945828509729953,
+      "route": "local",
+      "latency_ms": 237.32009300147183
+    },
+    {
+      "row_id": "auth-uq-004",
+      "type": "choice",
+      "domain": "security_incidents",
+      "subset": "unseen_question",
+      "label": "revoke_key",
+      "predicted": "delete_issue",
+      "score_value": null,
+      "probabilities": {
+        "revoke_key": 0.025687856527271725,
+        "delete_issue": 0.9668011919982809,
+        "password": 0.007510951474447523
+      },
+      "confidence": 0.9502017879974213,
+      "route": "local",
+      "latency_ms": 237.86762700183317
+    },
+    {
+      "row_id": "auth-uq-005",
+      "type": "choice",
+      "domain": "customer_support",
+      "subset": "unseen_question",
+      "label": "check_spam_and_resend",
+      "predicted": "check_spam_and_resend",
+      "score_value": null,
+      "probabilities": {
+        "check_spam_and_resend": 0.43190635186918974,
+        "close": 0.3014798354845644,
+        "delete": 0.2666138126462458
+      },
+      "confidence": 0.1478595278037846,
+      "route": "teacher",
+      "latency_ms": 237.88071201124694
+    },
+    {
+      "row_id": "auth-uq-006",
+      "type": "noul",
+      "domain": "customer_support",
+      "subset": "unseen_question",
+      "label": "yes",
+      "predicted": "no",
+      "score_value": null,
+      "probabilities": {
+        "yes": 0.36042616739747935,
+        "no": 0.6395738326025207
+      },
+      "confidence": 0.6395738326025207,
+      "route": "local",
+      "latency_ms": 151.86827100114897
+    },
+    {
+      "row_id": "auth-uq-007",
+      "type": "noul",
+      "domain": "billing",
+      "subset": "unseen_question",
+      "label": "yes",
+      "predicted": "yes",
+      "score_value": null,
+      "probabilities": {
+        "yes": 0.5620869486971761,
+        "no": 0.4379130513028239
+      },
+      "confidence": 0.5620869486971761,
+      "route": "teacher",
+      "latency_ms": 119.32907800655812
+    },
+    {
+      "row_id": "auth-uq-008",
+      "type": "noul",
+      "domain": "software_operations",
+      "subset": "unseen_question",
+      "label": "yes",
+      "predicted": "no",
+      "score_value": null,
+      "probabilities": {
+        "yes": 0.38060414506795615,
+        "no": 0.6193958549320439
+      },
+      "confidence": 0.6193958549320439,
+      "route": "local",
+      "latency_ms": 148.1751169922063
+    },
+    {
+      "row_id": "auth-uq-009",
+      "type": "noul",
+      "domain": "security_incidents",
+      "subset": "unseen_question",
+      "label": "yes",
+      "predicted": "no",
+      "score_value": null,
+      "probabilities": {
+        "yes": 0.4851194469573067,
+        "no": 0.5148805530426933
+      },
+      "confidence": 0.5148805530426933,
+      "route": "teacher",
+      "latency_ms": 133.78121200366877
+    },
+    {
+      "row_id": "auth-uq-010",
+      "type": "noul",
+      "domain": "customer_support",
+      "subset": "unseen_question",
+      "label": "no",
+      "predicted": "no",
+      "score_value": null,
+      "probabilities": {
+        "yes": 0.46281860266786445,
+        "no": 0.5371813973321355
+      },
+      "confidence": 0.5371813973321355,
+      "route": "teacher",
+      "latency_ms": 119.8020540032303
+    },
+    {
+      "row_id": "auth-uq-011",
+      "type": "score",
+      "domain": "software_operations",
+      "subset": "unseen_question",
+      "label": "0",
+      "predicted": "1",
+      "score_value": 0.9985848464346817,
+      "probabilities": {
+        "0": 0.05401157220808993,
+        "1": 0.8933920091491385,
+        "2": 0.05259641864277161
+      },
+      "confidence": 0.8400880137237078,
+      "route": "local",
+      "latency_ms": 309.89908600167837
+    },
+    {
+      "row_id": "auth-uq-012",
+      "type": "score",
+      "domain": "software_operations",
+      "subset": "unseen_question",
+      "label": "1",
+      "predicted": "1",
+      "score_value": 1.0585427168285675,
+      "probabilities": {
+        "0": 0.0077290837951491075,
+        "1": 0.9259991155811345,
+        "2": 0.06627180062371649
+      },
+      "confidence": 0.8889986733717017,
+      "route": "local",
+      "latency_ms": 214.15304999391083
+    },
+    {
+      "row_id": "auth-uq-013",
+      "type": "score",
+      "domain": "software_operations",
+      "subset": "unseen_question",
+      "label": "2",
+      "predicted": "1",
+      "score_value": 1.450266884740696,
+      "probabilities": {
+        "0": 0.049439392598972336,
+        "1": 0.45085433006135933,
+        "2": 0.4997062773396684
+      },
+      "confidence": 0.24955941600950257,
+      "route": "teacher",
+      "latency_ms": 281.9873459957307
+    },
+    {
+      "row_id": "auth-uq-014",
+      "type": "score",
+      "domain": "customer_support",
+      "subset": "unseen_question",
+      "label": "1",
+      "predicted": "1",
+      "score_value": 0.9726817625481441,
+      "probabilities": {
+        "0": 0.03500847647853784,
+        "1": 0.9573012844947801,
+        "2": 0.0076902390266819776
+      },
+      "confidence": 0.9359519267421702,
+      "route": "local",
+      "latency_ms": 289.55106499779504
+    },
+    {
+      "row_id": "auth-uq-015",
+      "type": "score",
+      "domain": "customer_support",
+      "subset": "unseen_question",
+      "label": "2",
+      "predicted": "1",
+      "score_value": 1.1405549575325593,
+      "probabilities": {
+        "0": 0.08173286024299131,
+        "1": 0.6959793219814578,
+        "2": 0.22228781777555076
+      },
+      "confidence": 0.5439689829721868,
+      "route": "teacher",
+      "latency_ms": 295.10620699147694
+    }
+  ],
+  "note": "同梱 100 件。latency は他プロセスと同時実行時の値なので、レイテンシは latency-cross-encoder.json を見る"
+}
